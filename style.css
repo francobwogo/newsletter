@@ -91,6 +91,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--clr-neutral-300);
+  padding-top: 5px;
 }
 
 div {
@@ -100,11 +102,14 @@ div {
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column-reverse;
-  padding-top: 10px;
+  padding-bottom: 50px;
   gap: 20px;
   line-height: 1.5;
   font-family: var(--ff-body);
+  background-color: var(--clr-neutral-400);
+  min-width: 375px;
 }
 
 .signup {
@@ -116,12 +121,19 @@ div {
   gap: 10px;
 }
 
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
 .heading {
   font-size: var(--fs-800);
   font-weight: var(--fw-bold);
 }
 
-ul > li {
+ul>li {
   background: url("./assets/images/icon-list.svg") no-repeat left center;
   padding: 5px 0px 0px 30px;
   list-style: none;
@@ -133,12 +145,15 @@ ul > li {
 .email {
   padding-top: 30px;
   padding-bottom: 15px;
+}
+
+.email > form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.email > label {
+.email> form > label {
   font-size: var(--fs-300);
   font-weight: var(--fw-bold);
 }
@@ -168,6 +183,105 @@ ul > li {
   width: 100%;
 }
 
-.btn-subscribe:hover {
-  background-color: var(--clr-primary-400);
+/* Extra small (XS) - Small (S) */
+@media (min-width: 600px) and (max-width: 720px) {
+  :root {
+    --fs-800: 1.25rem;
+    --fs-700: 1.25rem;
+    --fs-600: 1.2rem;
+    --fs-500: .75rem;
+    --fs-400: .75rem;
+    --fs-300: .75rem;
+  }
+  
+  body {
+    line-height: 1;
+  }
+
+  .email {
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+  .container {
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+/* Extra small (XS) - Large (L) */
+@media (min-width: 721px) and (max-width: 850px) {
+  :root {
+    --fs-800: 2rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1.25rem;
+    --fs-500: 1.2rem;
+    --fs-400: .9rem;
+    --fs-300: 1rem;
+  }
+  
+  body {
+    line-height: 1.5;
+  }
+
+  .email {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .container {
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+/* Large (L) */
+@media (min-width: 851px) and (max-width: 1199px) {
+  :root {
+    --fs-800: 3rem;
+    --fs-700: 2.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1.2rem;
+    --fs-300: 1.2rem;
+  }
+
+  .container {
+    flex-direction: row;
+    padding: 30px;
+    gap: 45px;
+  }
+
+  .btn-subscribe:hover {
+    background-image: linear-gradient(to right, #FF5476, #FF5B66, #FF624F, #FF6644);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  }
+}
+
+/* Extra Large (L) */
+@media (min-width: 1200px) {
+  :root {
+    --fs-800: 3rem;
+    --fs-700: 2.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1.2rem;
+    --fs-300: 1.2rem;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: row;
+    padding: 30px;
+    gap: 60px;
+    border-radius: 30px;
+  }
+
+  .btn-subscribe:hover {
+    background-image: linear-gradient(to right, #FF5476, #FF5B66, #FF624F, #FF6644);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  }
 }
