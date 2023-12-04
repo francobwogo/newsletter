@@ -147,15 +147,46 @@ ul>li {
   padding-bottom: 15px;
 }
 
-.email > form {
+#form{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.email> form > label {
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.validation-txt label,
+#text {
   font-size: var(--fs-300);
   font-weight: var(--fw-bold);
+}
+
+#email {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--clr-neutral-300);
+}
+
+.validation-txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#text {
+  color: var(--clr-primary-100);
+}
+
+.invalid > .inputBox > #email{
+  color: var(--clr-primary-100);
+  background-color: #ffe8e6;
+  border: 1px solid var(--clr-primary-100);
 }
 
 .btn-subscribe {
@@ -207,6 +238,9 @@ ul>li {
     padding: 30px;
     gap: 30px;
   }
+  .signup {
+    width: 330px;
+  }
 }
 
 /* Extra small (XS) - Large (L) */
@@ -217,7 +251,7 @@ ul>li {
     --fs-600: 1.25rem;
     --fs-500: 1.2rem;
     --fs-400: .9rem;
-    --fs-300: 1rem;
+    --fs-300: .75rem;
   }
   
   body {
@@ -233,6 +267,10 @@ ul>li {
     padding: 30px;
     gap: 30px;
   }
+
+  .signup {
+    width: 350px;
+  }
 }
 
 /* Large (L) */
@@ -243,13 +281,17 @@ ul>li {
     --fs-600: 2rem;
     --fs-500: 1.5rem;
     --fs-400: 1.2rem;
-    --fs-300: 1.2rem;
+    --fs-300: .8rem;
   }
 
   .container {
     flex-direction: row;
     padding: 30px;
     gap: 45px;
+  }
+
+  .signup {
+    width: 350px;
   }
 
   .btn-subscribe:hover {
@@ -266,7 +308,7 @@ ul>li {
     --fs-600: 2rem;
     --fs-500: 1.5rem;
     --fs-400: 1.2rem;
-    --fs-300: 1.2rem;
+    --fs-300: .9rem;
   }
 
   html {
@@ -278,6 +320,10 @@ ul>li {
     padding: 30px;
     gap: 60px;
     border-radius: 30px;
+  }
+
+  .signup {
+    width: 350px;
   }
 
   .btn-subscribe:hover {
