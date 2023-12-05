@@ -228,8 +228,7 @@ ul>li {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0);
   padding: 20px;
 }
@@ -238,15 +237,12 @@ ul>li {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 180px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
   gap: 30px;
+  padding: 20px;
   line-height: 1.5;
   font-family: var(--ff-body);
   background-color: var(--clr-neutral-400);
-  /* height: 100vh; */
+  height: 100%;
 }
 
 .modal-heading {
@@ -255,7 +251,7 @@ ul>li {
 }
 
 .modal-success {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 /* Extra small (XS) - Small (S) */
