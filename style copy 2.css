@@ -92,19 +92,11 @@ html {
   align-items: center;
   justify-content: center;
   background-color: var(--clr-neutral-300);
-  border: 2px solid auto;
-  height: auto;
   padding-top: 5px;
 }
 
 div {
   width: 100%;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {

@@ -34,13 +34,16 @@
           </ul>
         </div>
         <div class="email">
-          <div class="email">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" value="email@company.com" required />
-          </div>
-        </div>
-        <div class="btn">
-          <button class="btn-subscribe">Subscribe to monthly newsletter</button>
+          <form id="form" action="#">
+            <div class="validation-txt">
+              <label for="email">Email address</label>
+              <span id="text"></span>
+            </div>            
+            <div class="inputBox">
+              <input type="text" name="email" id="email" placeholder="email@example.com" onkeydown="validation()" required>
+              <input class="btn btn-subscribe" type="submit" value="Subscribe to monthly newsletter">
+            </div>
+          </form>
         </div>
       </div>
       <div class="img">

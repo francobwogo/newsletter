@@ -1,3 +1,7 @@
+const form = document.querySelector('form');
+const modal = document.querySelector('.modal');
+
+// Email Validation
 function validation() {
   let form = document.getElementById("form");
   let emailAdd = document.getElementById("email");
@@ -22,3 +26,13 @@ function validation() {
     text.innerHTML = "";
   }
 }
+
+// Modal for successful registration
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  // Simulate submit success
+  setTimeout(() => {
+    modal.style.display = 'flex';
+  }, 100);
+});
