@@ -116,7 +116,6 @@ main {
   font-family: var(--ff-body);
   background-color: var(--clr-neutral-400);
   min-width: 375px;
-  max-width: 390px;
   height: 100%;
 }
 
