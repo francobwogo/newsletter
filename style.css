@@ -92,6 +92,7 @@ html {
   align-items: center;
   justify-content: center;
   background-color: var(--clr-neutral-300);
+  padding-top: 5px;
 }
 
 div {
@@ -107,14 +108,14 @@ main {
 .container {
   display: flex;
   align-items: center;
-  justify-content:start;
+  justify-content: center;
   flex-direction: column-reverse;
+  padding-bottom: 50px;
   gap: 20px;
   line-height: 1.5;
   font-family: var(--ff-body);
   background-color: var(--clr-neutral-400);
   min-width: 375px;
-  max-width: 390px;
   height: 100%;
 }
 
@@ -131,7 +132,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: fit-content;
 }
 
 .heading {
@@ -255,7 +256,7 @@ ul>li {
 }
 
 .modal-success {
-  margin-top: 160px;
+  margin-top: 200px;
 }
 
 /* Extra small (XS) - Small (S) */
